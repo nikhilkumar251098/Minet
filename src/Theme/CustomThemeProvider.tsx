@@ -1,6 +1,5 @@
 import theme from "./Theme";
-import { ThemeProvider as MUIThemeProvider } from "@mui/material/styles";
-import { ThemeProvider } from "emotion-theming";
+import { ThemeProvider as MUIThemeProvider, ThemeProvider } from "@mui/material/styles";
 import './constant.css'
 import React from "react";
 
