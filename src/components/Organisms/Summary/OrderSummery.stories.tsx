@@ -12,7 +12,9 @@ export default {
 
 
 const Template:ComponentStory<typeof OrderSummery> = (args) => (
- <BrowserRouter><OrderSummery {...args}>{args.children}</OrderSummery></BrowserRouter>
+ <BrowserRouter>
+    <OrderSummery {...args} />
+  </BrowserRouter>
 );
   
   export const summary = Template.bind({});

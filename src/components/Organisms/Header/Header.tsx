@@ -58,8 +58,8 @@ return (
 			</div>
 				<div className={classes.RightOptions}> 
 				<Stack direction={'row'}  spacing={1}>
-					<Button variant="contained" color="secondary" children='SELL' disabled={false} size={"small"} onClick={() => navigate('/sell')} />
-					<Button variant="contained" color='primary' children='BUY' disabled={false} size={"small"} onClick={() => navigate('/UpdatedDashboard')} />    
+					<Button variant="contained" color="secondary"  disabled={false} size={"small"} onClick={() => navigate('/sell')}>SELL</Button>
+					<Button variant="contained" color='primary'  disabled={false} size={"small"} onClick={() => navigate('/')}>BUY</Button>    
 
 					<Profile />
 				</Stack>

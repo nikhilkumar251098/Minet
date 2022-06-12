@@ -11,7 +11,7 @@ export type buttonprops = {
     color: string,
     size : 'small' | 'large',
     disabled: boolean,
-   onClick? : Function
+    onClick? : React.MouseEventHandler<HTMLAnchorElement>
     
     
 }

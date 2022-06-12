@@ -4,7 +4,6 @@ import Button from '../../Atoms/Button/Buttons';
 import {makeStyles} from '@mui/styles';
 import { Stack } from '@mui/material';
 
-
 const useStyles = makeStyles(
     {
     lined: {
@@ -19,7 +18,7 @@ const useStyles = makeStyles(
     textClass:{
         textAlign:'center'
     },
-    imageDiv :{
+    imageDiv:{
         textAlign:'center'
     }
 }
@@ -40,8 +39,8 @@ export default function BuySuccessScreen() {
             </div>
             <div id="buttons-area">
                 <Stack direction={'row'} spacing={2} justifyContent={'center'} alignItems={'center'} padding={'20px'}>
-                    <Button variant="outlined" color='primary' children='BUY CRYPTO' disabled={false} size={'small'} />
-                    <Button variant="contained" color='primary' children='GO TO USD COIN' disabled={false} size={'small'} />
+                    <Button variant="outlined" color='primary' disabled={false} size={'small'} >BUY CRYPTO</Button>
+                    <Button variant="contained" color='primary' disabled={false} size={'small'}>GO TO USD COIN</Button>
                 </Stack>
             </div>
         </div>

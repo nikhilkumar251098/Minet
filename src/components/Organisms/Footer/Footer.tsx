@@ -43,7 +43,7 @@ const Footer = () => {
         <Select defaultValue={'menu'} className='dropdownClass'>          
             <option value='menu'>English</option>
         </Select>        
-        <Button variant="outlined" children='need Help' color='primary' disabled={false} size={'small'} />
+        <Button variant="outlined" color='primary' disabled={false} size={'small'}>need help</Button>
       </Stack>
       </div>
       </Stack>

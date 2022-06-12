@@ -23,7 +23,7 @@ const  AmountDetails : React.FC <AmountProps> = (props:any) =>
             <Box border= {'1px solid #E8E8F7'} width={'660px'} height={'74px'} padding = {'20px'} justifyContent={'space-between'} alignItems={'center'}>
                 <Stack direction='row' spacing='5' justifyContent={'space-between'} alignItems={'center'}>
                     <Typography variant='subtitle1' content={props.price} />
-                    <Button variant="outlined" color={props.buttonColor} children={props.buttonText} disabled={false} size={"large"} />                    
+                    <Button variant="outlined" color={props.buttonColor} disabled={false} size={"large"}>{props.buttonText}</Button>                    
                 </Stack>
             </Box>
 

@@ -7,10 +7,9 @@ import GridViewIcon from '@mui/icons-material/GridView';
 import DonutLargeIcon from '@mui/icons-material/DonutLarge';
 import ModeEditIcon from '@mui/icons-material/ModeEdit';
 import FormatAlignJustifyIcon from '@mui/icons-material/FormatAlignJustify';
-
-
-
 import Icon from './Icon';
+import React from 'react';
+
 const icons = {
     title: "Atoms/Icon",
     component: Icon,

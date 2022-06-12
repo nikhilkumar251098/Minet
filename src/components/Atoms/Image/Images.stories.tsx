@@ -1,5 +1,7 @@
 import Image from './Images';
 import {ComponentMeta, ComponentStory} from '@storybook/react';
+import React from 'react';
+
 export default {
     title : 'Atoms/Images',
     component: Image

@@ -8,7 +8,7 @@ export default {
     component: Amount 
 }  as ComponentMeta<typeof Amount >;
 
-const Template : ComponentStory<typeof Amount > = (args)=><Amount  {...args}>{args.children}</Amount>
+const Template : ComponentStory<typeof Amount > = (args)=><Amount  {...args} />
 
   
   export const details = Template.bind({});

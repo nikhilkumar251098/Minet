@@ -43,8 +43,8 @@ const GridCard = (props: any) => {
 
  useEffect(() => {
    const processor = async () => {
-  let response = await fetch("http://localhost:8086/crypto");
-  let result = await response.json();
+    const response = await fetch("http://localhost:8086/crypto");
+    const result = await response.json();
   setData(result);
    };
    processor();
@@ -53,8 +53,8 @@ const GridCard = (props: any) => {
   
     
       const cards = () => {
-        return data.map((currData: Crypto) => {
-          return (<Grid item width={'156'} height={'159'} >
+        return data.map((currData: Crypto, index) => {
+          return (<Grid item width={'156'} height={'159'} key={index} >
         <CardComponent 
           id={currData.id}
           name={currData.title}

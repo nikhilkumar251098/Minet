@@ -18,6 +18,17 @@ const config: Configuration = {
   module: {
     rules: [
       {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+        loader: require.resolve('file-loader'),
+        options: {
+          name: 'static/media/[name].[hash].[ext]',
+        },
+      },
+      {
         test: /\.(ts|js)x?$/i,
         exclude: /node_modules/,
         use: {
@@ -50,7 +61,7 @@ const config: Configuration = {
   ],
   devtool: "inline-source-map",
   devServer: {
-    static: path.join(__dirname, "build"),
+    static: path.join(__dirname, "public"),
     historyApiFallback: true,
     port: 3000,
     open: true,

@@ -14,7 +14,7 @@ export type SummeryProps ={
   buttonText:string,
   buttonColor: 'secondary' | 'primary',
   captionText:string,
-  onClick?: Function
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>
   
 }
 
@@ -83,7 +83,7 @@ const Summery : React.FC < SummeryProps > = (props:any) =>{
            
            </Stack>   
                    
-             <Button onClick={props.onClick} variant='contained' color={props.buttonColor} children={props.buttonText}  disabled={false} size='large' />
+             <Button onClick={props.onClick} variant='contained' color={props.buttonColor}  disabled={false} size='large'>{props.buttonText}</Button>
           
             </Stack>
               
