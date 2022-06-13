@@ -53,7 +53,7 @@ const GridCard = (props: any) => {
   
     
       const cards = () => {
-        return data?.map((currData: Crypto, index) => {
+        return data.map((currData: Crypto, index) => {
           return (<Grid item width={'156'} height={'159'} key={index} >
         <CardComponent 
           id={currData.id}
