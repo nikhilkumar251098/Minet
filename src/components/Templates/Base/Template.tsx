@@ -9,17 +9,19 @@ export default function Template(props: any) {
     
     return(
         
-        <Stack direction={'row'} spacing={2} padding={'30px'}>
+        <Stack direction={'row'} spacing={2} >
             <Navs width={'44px'} height={'22px'} size={'large'} />
             <Stack direction={'column'} spacing={'4'} justifyContent={'space-between'} alignItems={'center'} >
-                <div className='header-footer'>
-                    <Header  />
-                </div>     
-                <div id='content-wrap'>
-                    {props.children}
-                </div>
-                <div className='header-footer'>
-                    <Footer />
+                <div style= {{ position: "relative",width: "calc(100vw - 68px)", minHeight:"calc(100vh - 16px)" }}>
+                    <div className='header-footer'>
+                        <Header />
+                    </div>     
+                    <div id='content-wrap'>
+                        {props.children}
+                    </div>
+                    <div className='header-footer'>
+                        <Footer />
+                    </div>
                 </div>
             </Stack>
         </Stack>

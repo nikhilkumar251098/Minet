@@ -15,18 +15,14 @@ export default function Header() {
 	const useStyles = makeStyles({
 		
 		RightOptions: {
-			float:'right',
-			textAlign:'right',
-			width:'50%',
-			height:'100%',
-			display: 'flex',
-			flexDirection:'row'
+		// 	textAlign:'right',
+		// 	width:'50%',
+		// 	height:'100%',
+		// 	display: 'flex',
+		// 	flexDirection:'row'
 		},
 		heading:{
-			width:'50%',
-			height:'100%',
-			float:'left',
-			marginTop:'30px'
+			height:'100%'
 		},
 		ops:{
 			width:'50%',
@@ -53,16 +49,19 @@ export default function Header() {
 
 return (	
 		<Toolbar>
-			<div className={classes.heading}>
-			<Typography variant="h6" content='Checkout' />
-			</div>
-				<div className={classes.RightOptions}> 
-				<Stack direction={'row'}  spacing={1}>
-					<Button variant="contained" color="secondary"  disabled={false} size={"small"} onClick={() => navigate('/sell')}>SELL</Button>
-					<Button variant="contained" color='primary'  disabled={false} size={"small"} onClick={() => navigate('/')}>BUY</Button>    
+			<div style={{display: "flex", justifyContent:"space-between", width: "100%", alignItems: "center"}}>
+				<div className={classes.heading}>
+				<Typography variant="h6" content='Checkout' />
+				</div>
+					<div className={classes.RightOptions}> 
+					<Stack direction={'row'}  spacing={1}>
 
-					<Profile />
-				</Stack>
+						<Button variant="contained" color="secondary"  disabled={false} size={"small"} onClick={() => navigate('/sell')}>SELL</Button>
+						<Button variant="contained" color='primary'  disabled={false} size={"small"} onClick={() => navigate('/')}>BUY</Button>    
+
+						<Profile />
+					</Stack>
+				</div>
 			</div>
 		</Toolbar>	
 );

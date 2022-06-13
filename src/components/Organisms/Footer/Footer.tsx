@@ -12,9 +12,11 @@ const Footer = () => {
 
   const useStyles = makeStyles({
     body:{
-      height:'370px',
-      width:'100vw',
-      paddingTop:'38px'
+      width:'calc(100vw - 68px)',
+      paddingTop:'50px',
+      position:"absolute",
+      bottom:"0",
+      backgroundColor:"white"
     },
     rightFooter:
     {
@@ -27,7 +29,7 @@ const Footer = () => {
 
   return (
   
-    <div className={classes.body} data-testid="footer">
+    <div className={classes.body}>
       <Stack direction={'row'} spacing={'1'}>
       <div>
           <Stack direction='row' spacing={3} alignContent={'center'}>

@@ -8,7 +8,8 @@
     "build": "webpack --config webpack.prod.config.ts",
     "start": "webpack serve --config webpack.dev.config.ts",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build-static-webapp":"expo build:web"
   },
   "keywords": [],
   "author": "",
